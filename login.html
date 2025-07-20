@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התחברות למערכת IVR</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>התחברות למערכת IVR</h1>
+        <form id="loginForm">
+            <label for="systemNumber">מספר מערכת:</label>
+            <input type="text" id="systemNumber" name="systemNumber" required>
+
+            <label for="password">סיסמה:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">התחבר</button>
+
+            <p id="error-message" class="hidden">שגיאה: נא לבדוק את מספר המערכת והסיסמה.</p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
