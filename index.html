@@ -20,15 +20,19 @@
           </p>
         </div>
 
-        <form id="login-form" class="login-form">
-          <label for="username">מספר מערכת:</label>
-          <input type="text" id="username" name="username" required />
+<form id="login-form" class="login-form">
+  <label for="username">מספר מערכת:</label>
+  <input type="text" id="username" name="username" required />
 
-          <label for="password">סיסמה:</label>
-          <input type="password" id="password" name="password" required />
+  <label for="password">סיסמה:</label>
+  <div style="position: relative;">
+    <input type="password" id="password" name="password" required style="padding-left: 2.5rem;" />
+    <button type="button" id="toggle-password" style="position: absolute; left: 0.5rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: white; font-size: 1.2rem; cursor: pointer;">👁️</button>
+  </div>
 
-          <button type="submit">התחבר</button>
-        </form>
+  <button type="submit">התחבר</button>
+</form>
+
       </div>
     </div>
 
