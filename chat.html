@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ivrbot - עורך קו חכם</title>
+    <link rel="stylesheet" href="chat.css" />
+  </head>
+  <body>
+    <div class="chat-wrapper">
+      <header class="chat-header">
+        <h1>🤖 ivrbot - עורך הקו שלך</h1>
+        <p id="chat-status">ממתין לקלט מהמשתמש...</p>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="progress-info" id="progress-info">0% - לא התחיל עדיין</div>
+      </header>
+
+      <main id="chat-area" class="chat-area"></main>
+
+      <form id="chat-form" class="chat-form">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="מה אתה רוצה שהקו שלך יעשה?"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">שלח</button>
+      </form>
+    </div>
+
+    <script src="chat.js"></script>
+  </body>
+</html>
